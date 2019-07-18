@@ -4,11 +4,29 @@ const express = require("express");
 // variable to access the methods
 // exposes a top-level function
 const app = express();
+// render HTML
+app.engine('html', require('ejs').renderFile);
+// add static files folder 
+app.use(express.static("public"));
 
 // creating a “route”
 app.get("/", function(req, res){
 
-    res.send("it works!");
+    res.render("index.html");
+
+});
+
+// creating a “route”
+app.get("/mercury", function(req, res){
+
+    res. render("mercury.html");
+
+});
+
+// creating a “route”
+app.get("/venus", function(req, res){
+
+    res.send("This will be Venus web page!");
 
 });
 
