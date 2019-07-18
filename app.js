@@ -37,6 +37,55 @@ app.get("/earth", function(req, res){
 
 });
 
+// creating a “route”
+app.get("/mars", function(req, res){
+
+    res.render("mars.html");
+
+});
+
+// creating a “route”
+app.get("/jupiter", function(req, res){
+
+    res.render("jupiter.html");
+
+});
+
+// creating a “route”
+app.get("/saturn", function(req, res){
+
+    res.render("saturn.html");
+
+});
+
+// creating a “route”
+app.get("/uranus", function(req, res){
+
+    res.render("uranus.html");
+
+});
+
+// creating a “route”
+app.get("/neptune", function(req, res){
+
+    res.render("neptune.html");
+
+});
+
+// creating a “route”
+app.get("/pluto", function(req, res){
+
+    res.render("pluto.html");
+
+});
+
+// creating a “route”
+app.get("/planet9", function(req, res){
+
+    res.render("planet9.html");
+
+});
+
 // allow the server to listen for any request
 // local server listener
 // app.listen("8081", "127.0.0.1", function() {
