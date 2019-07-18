@@ -31,8 +31,10 @@ app.get("/venus", function(req, res){
 });
 
 // allow the server to listen for any request
-// server listener
-app.listen("8081", "127.0.0.1", function() {
+// local server listener
+// app.listen("8081", "127.0.0.1", function() {
+// heroku server listner
+app.listen(process.env.PORT, process.env.IP, function() {
 
     console.log("Express Server is Running...")
 
