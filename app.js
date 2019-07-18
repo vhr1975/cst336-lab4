@@ -19,14 +19,14 @@ app.get("/", function(req, res){
 // creating a “route”
 app.get("/mercury", function(req, res){
 
-    res. render("mercury.html");
+    res.render("mercury.html");
 
 });
 
 // creating a “route”
 app.get("/venus", function(req, res){
 
-    res.send("This will be Venus web page!");
+    res.render("venus.html");
 
 });
 
