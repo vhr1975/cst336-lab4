@@ -86,6 +86,13 @@ app.get("/planet9", function(req, res){
 
 });
 
+// creating a “route”
+app.get("/test", function(req, res){
+
+    res.render("test.html");
+
+});
+
 // allow the server to listen for any request
 // local server listener
 // app.listen("8081", "127.0.0.1", function() {
